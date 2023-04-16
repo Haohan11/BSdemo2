@@ -1,0 +1,88 @@
+@import _mixin
+
+@include whnpx(200)
+@include whnpx(400)
+@include create-background-color(bg-main, #f3f2ee)
+
+$main-color: #f3f2ee
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html, body
+    height: 100%
+    background-color: #{$main-color}
+
+a
+    text-decoration: none
+    color: unset
+
+.slide-title
+    text-shadow: 0 0 0.4rem rgba(0,0,0,.56), 0.4rem 0.4rem 0.8rem rgba(0,0,0,.48), 0.8rem 0.8rem 1.6rem rgba(0,0,0,.24)
+
+.carousel-caption
+    left: 10%
+    width: 35%
+    text-align: left
+
+.card
+    margin-bottom: 2rem
+    height: 90%
+    border: none
+    background-color: #{$main-color}
+    // border: 5px solid 
+
+.img-container
+    height: 60%
+    overflow: hidden
+    border-radius: 8px
+
+
+.card-img-top
+    width: 100%
+    height: 100%
+    border-radius: 8px
+    object-fit: cover
+
+.card-text
+    font-size: 1.2rem
+    font-weight: 700
+    display: -webkit-box!important
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+    text-overflow: ellipsis
+    overflow: hidden
+
+.tag
+    text-align: center
+    border-radius: 4px
+    font-size: .8rem
+    padding: .1rem .5rem
+
+.more-tag
+    color: #b8ccd8
+    margin-left: auto
+
+.date
+    font-size: .8rem
+    color: #6c6c6d
+
+.fa-bookmark
+    color: #00a2e4
+
+.card
+    img, a
+        transition: .35s
+        transition-delay: .1s
+    a
+        &:hover
+            transform: scale(1.5)
+
+.card
+    &:hover
+        img
+            transform: scale(1.2)
+        .card-text
+            text-decoration: underline

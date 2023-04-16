@@ -1,0 +1,18 @@
+@mixin whnpx($n)
+    .h#{$n}px
+        height: #{$n}px
+    .w#{$n}px
+        width: #{$n}px
+
+@mixin sqnpx($n)
+    .sq#{$n}px
+        height: #{$n}px
+        width: #{$n}px
+
+@mixin create-background-color($name, $color)
+    .bg-#{$name}
+        background-color: $color
+
+@mixin create-color($name, $color)
+    .#{$name}
+        color: $color
