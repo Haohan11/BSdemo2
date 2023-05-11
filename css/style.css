@@ -52,6 +52,7 @@ a {
 }
 
 .img-container {
+  min-height: 100px;
   height: 60%;
   overflow: hidden;
   border-radius: 8px;
